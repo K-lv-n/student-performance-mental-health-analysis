@@ -1,25 +1,118 @@
 # Student Performance and Mental Health Analysis
 
-A SQL Server and Power BI analytics project exploring patterns in student academic performance, mental-health indicators, burnout, study habits, and dropout risk.
+**An exploratory data analytics project using SQL Server and Power BI**
 
-![Power BI dashboard preview](images/dashboard_preview.png)
+This project investigates student academic performance, mental-health indicators, burnout, study habits and dropout risk. It demonstrates an end-to-end analytical workflow, from data inspection and preparation in SQL Server to exploratory analysis and visual communication in Power BI.
 
-## Project overview
+## 1. Project background
 
-This project uses a student mental-health and burnout dataset (the supplied source file is named `student_mental_health_burnout_1M.csv`) to demonstrate a practical analytics workflow:
+Academic performance is influenced by many factors, and understanding the relationships between study habits, mental well-being and academic outcomes can help inform student-support decisions.
 
-1. Inspect the source table and its columns.
-2. Check row counts and missing values.
-3. clean and convert fields to appropriate numeric/text data types.
-4. Explore distributions and summary statistics using SQL.
-5. Aggregate records by age, gender, academic year, and risk level.
-6. Present selected indicators and comparisons in Power BI.
+This project explores the available student data to identify patterns and relationships among these indicators.
 
-The analysis is exploratory. Associations shown in the dashboard should not be interpreted as proof that one factor causes another.
+**Main analytical question:**
 
-## Dashboard highlights
+> What patterns and relationships exist between students' academic performance, study habits, mental-health indicators, burnout and dropout risk?
 
-The supplied dashboard displays these headline values:
+The analysis is exploratory. It identifies patterns in the available data; it does not establish that one factor causes another.
+
+## 2. Project objectives
+
+- Inspect the dataset and understand its structure.
+- Identify missing values, data-type issues and possible duplicate records.
+- Clean and prepare data for analysis.
+- Calculate descriptive statistics and examine distributions.
+- Compare student indicators across relevant academic and demographic groups.
+- Build a Power BI dashboard to communicate key indicators and patterns.
+- Identify areas that may deserve further investigation.
+
+## 3. Tools and technologies
+
+| Tool | Application |
+|---|---|
+| SQL Server / T-SQL | Data inspection, cleaning, transformation and exploratory analysis |
+| Power BI | KPI reporting, interactive visualisation and dashboard development |
+| CSV | Dataset storage and data exchange |
+
+## 4. Data and variables
+
+The original source file supplied for this project was named `student_mental_health_burnout_1M.csv`.
+
+The repository contains a **5,000-row sample** for demonstration and inspection. The original CSV is approximately 198 MB and is not included because it exceeds GitHub's standard 100 MB individual-file limit.
+
+The analysis focuses on the available indicators, including:
+
+- Academic performance
+- Mental-health scores
+- Study hours
+- Burnout scores
+- Support indicators
+- Age and gender
+- Academic year
+- Dropout-risk categories
+
+The exact interpretation, measurement scale and valid range of each variable should be confirmed against the original dataset documentation.
+
+## 5. Analytical workflow
+
+### Stage 1 — Data inspection
+
+The first stage involved examining the source table and its structure.
+
+The SQL analysis includes:
+- Checking the number of records.
+- Inspecting columns and data types.
+- Identifying missing or blank values.
+- Checking for possible duplicate records.
+- Reviewing values that may require conversion or validation.
+
+**Why this matters:** Data quality issues can affect calculations and lead to misleading conclusions if they are not identified before analysis.
+
+### Stage 2 — Data cleaning and preparation
+
+SQL Server was used to prepare the data for analysis.
+
+The scripts demonstrate:
+- Converting fields to appropriate data types.
+- Cleaning text values.
+- Handling numeric conversion checks.
+- Examining missing values.
+- Checking for duplicate records.
+- Preparing cleaned and aggregated tables.
+
+**Important:** A duplicate check does not automatically remove duplicates, and identifying missing values does not by itself mean those values have been treated. These decisions should be documented separately.
+
+### Stage 3 — Exploratory data analysis (EDA)
+
+The next stage uses descriptive statistics and grouped summaries to explore the data.
+
+The SQL scripts demonstrate:
+- Counts and frequency summaries.
+- Mean, median and standard deviation.
+- Variance and other descriptive measures.
+- Percentiles and distribution summaries.
+- Comparisons across selected demographic and academic groups.
+
+**Why this matters:** EDA helps reveal the distribution of variables, identify unusual values and guide the questions explored in the dashboard.
+
+### Stage 4 — Power BI dashboard
+
+Power BI was used to present selected indicators and comparisons in a visual format.
+
+The dashboard includes:
+- KPI cards for average performance, mental health, study hours, burnout and support.
+- Academic performance comparisons by academic year and age.
+- Comparisons involving study hours, performance and mental-health indicators.
+- Visual exploration of mental-health-related factors.
+- Dropout-risk breakdowns by academic year.
+
+### Dashboard preview
+
+![Student Mental Health Power BI Dashboard](images/dashboard_preview.png)
+
+## 6. Dashboard observations
+
+The supplied dashboard screenshot displays the following headline values:
 
 | Indicator | Displayed value |
 |---|---:|
@@ -28,81 +121,107 @@ The supplied dashboard displays these headline values:
 | Average study hours | 5.78 |
 | Average burnout | 3.94 |
 | Average support | 4.45 |
-| Performance KPI | 72.91 (goal: 73.60) |
+| Performance KPI | 72.91 |
+| Performance KPI goal | 73.60 |
 
-Visuals include performance by academic year and age, study hours compared with performance and mental-health indicators, direct and indirect factor comparisons, and a dropout-risk breakdown by academic year.
+The displayed performance KPI is 0.69 points below its stated goal.
 
-These are values visible in the supplied dashboard screenshot; refresh the PBIX against the intended source data before treating them as current results.
+These figures provide a high-level summary of the dashboard. They should be interpreted in the context of the variable definitions, measurement scales and filters applied in Power BI.
 
-## Repository structure
+The visual comparisons can help generate further questions, such as whether study hours and performance vary together, or whether dropout-risk categories differ across academic years. The chart patterns should be examined before making specific claims about these relationships.
+
+**Results validation:** The values above are transcribed from the supplied dashboard screenshot. Refresh the Power BI report against the intended source data and verify its measures before treating them as final results.
+
+## 7. Key analytical questions for further investigation
+
+The project provides a foundation for investigating questions such as:
+
+1. Is there an observable relationship between study hours and academic performance?
+2. How do mental-health and burnout indicators vary across academic years?
+3. Do academic performance patterns differ across age groups?
+4. How is dropout risk distributed across academic years?
+5. How do support indicators vary alongside mental-health and performance measures?
+
+These are questions for analysis, not assumed findings. Further statistical testing would be needed to assess the strength and uncertainty of observed relationships.
+
+## 8. Repository structure
 
 ```text
-.
-├── README.md
+student-performance-mental-health-analysis/
+│
 ├── data/
-│   └── sample_student_mental_health.csv
+│   ├── sample_student_mental_health.csv
+│   └── README.md
+│
 ├── docs/
 │   └── methodology.md
+│
 ├── images/
 │   └── dashboard_preview.png
+│
 ├── powerbi/
 │   └── student_mental_health_dashboard.pbix
-└── sql/
-    ├── 01_initial_exploration_and_cleaning.sql
-    ├── 02_cleaned_data_eda.sql
-    └── 03_reduced_data_analysis.sql
+│
+├── sql/
+│   ├── 01_initial_exploration_and_cleaning.sql
+│   ├── 02_cleaned_data_eda.sql
+│   └── 03_reduced_data_analysis.sql
+│
+└── README.md
 ```
 
-## Tools and skills demonstrated
+## 9. How to reproduce the analysis
 
-- **SQL Server / T-SQL:** data inspection, `COUNT`, `CASE`, `TRY_CAST`, `ALTER TABLE`, `GROUP BY`, aggregate functions, common table expressions, window functions, `PERCENTILE_CONT`, and `UNPIVOT`.
-- **Data preparation:** missing-value checks, type conversion, text cleanup, duplicate checks, and aggregation.
-- **Power BI:** KPI cards, slicers, clustered columns, line/area visuals, and donut chart.
-- **Communication:** dashboard-based presentation of analytical indicators.
+1. Obtain the original dataset from its lawful source and check its licence and redistribution conditions.
+2. Import the dataset into SQL Server.
+3. Create or select the `StudentsDB` database.
+4. Check the database and table names used in the SQL scripts.
+5. Run the SQL scripts in the recommended order.
+6. Resolve any table-name differences between the scripts and your SQL Server environment.
+7. Open the Power BI file and update its data-source connection to your SQL Server instance.
+8. Refresh the report and validate the dashboard measures.
 
-## Data and large-file note
+**Recommended SQL execution order:**
 
-The original CSV is approximately 198 MB, which exceeds GitHub's 100 MB per-file limit. This repository therefore includes a **5,000-row sample** for inspection and excludes the full source CSV.
+1. `01_initial_exploration_and_cleaning.sql`
+2. `02_cleaned_data_eda.sql`
+3. `03_reduced_data_analysis.sql`
 
-To reproduce the full analysis:
-1. Obtain the original dataset from its lawful source.
-2. Import it into SQL Server.
-3. Update the database/table references in the scripts if your names differ.
-4. Run the SQL scripts in sequence, checking the table names created by each step.
-5. Open the PBIX file and point its queries to your SQL Server instance.
+The scripts contain references to more than one reduced-table name. Confirm the table created in your environment and align the references before running the final script.
 
-If you have permission to redistribute the full CSV and need it versioned with the project, use Git LFS or link to an approved external data source rather than committing a 198 MB file directly.
+## 10. Limitations and responsible interpretation
 
-## Running the SQL scripts
+- The repository contains a 5,000-row sample, not the original approximately 198 MB dataset.
+- The dataset source, collection methodology and licence should be documented before the analysis is used for formal research.
+- The dashboard figures should be revalidated against the intended data source.
+- Missing-value and duplicate checks do not automatically perform treatment or deletion.
+- Aggregated results can conceal variation between individual records.
+- Associations do not establish causation.
+- Mental-health indicators are not clinical diagnoses. Results should be communicated responsibly and without identifying individuals.
 
-The scripts currently reference a SQL Server database named `StudentsDB` and tables such as `student_mental_health_burnout_1M` and `student_cleaned`. Create/import the source table first, then verify the database and table names before execution.
+## 11. Skills demonstrated
 
-Recommended order:
+- Data inspection and quality assessment
+- SQL data cleaning and transformation
+- Descriptive statistics and exploratory data analysis
+- Data aggregation and analytical querying
+- Power BI dashboard development
+- KPI reporting and data visualisation
+- Communicating analytical results and limitations
 
-1. `sql/01_initial_exploration_and_cleaning.sql`
-2. `sql/02_cleaned_data_eda.sql`
-3. `sql/03_reduced_data_analysis.sql`
+## 12. Future improvements
 
-**Reproducibility note:** the supplied scripts contain references to more than one reduced-table name. Confirm the actual table created in your SQL Server environment and align the names before running the reduced-data script. The scripts are preserved as supplied for transparency.
-
-## Important interpretation and quality notes
-
-- A missing-value count is not the same as a missing-value treatment. Document any imputation or row-removal decisions separately.
-- A duplicate check identifies repeated records; it does not itself remove them.
-- Aggregating by demographic and academic categories reduces the number of rows but also removes individual-level detail. Use the raw/cleaned table when individual-level analysis is required.
-- Mental-health measures are sensitive. Avoid identifying individuals, and do not use exploratory scores as clinical diagnoses.
-- The dashboard shows associations and descriptive comparisons; causal claims require an appropriate research design and statistical analysis.
-
-## Suggested next improvements
-
-- Add a data dictionary with definitions, units, and valid ranges for each field.
-- Add validation queries for out-of-range values and failed numeric conversions.
-- Document the dataset source, licence, and collection methodology.
-- Add a separate statistical modelling stage if prediction is part of the project objective.
-- Improve chart titles and legends so every plotted measure is clearly named.
+- Add a complete data dictionary with variable definitions, units and valid ranges.
+- Document the original dataset source and licence.
+- Add data validation queries for out-of-range values and failed conversions.
+- Validate dashboard measures against SQL outputs.
+- Add statistical tests to investigate selected relationships.
+- Consider an appropriate regression model if the research objective is extended to prediction.
+- Improve chart annotations to make the findings easier to interpret.
 
 ## Author
 
-**Data Analytics Portfolio Project**
+**K-lv-n**  
+Data Analytics Portfolio Project
 
-SQL Server | Power BI | Data Cleaning | Exploratory Data Analysis | Data Visualization
+**Technologies:** SQL Server | Power BI | Data Cleaning | Exploratory Data Analysis | Data Visualisation
