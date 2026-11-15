@@ -2,7 +2,7 @@
 
 **An exploratory data analytics project using SQL Server and Power BI**
 
-This project investigates student academic performance, mental-health indicators, burnout, study habits and dropout risk. It demonstrates an end-to-end analytical workflow, from data inspection and preparation in SQL Server to exploratory analysis and visual communication in Power BI.
+This project investigates student academic performance, mental-health indicators, burnout, study habits and dropout risk. It demonstrates an end-to-end analytical workflow, from data inspection and preparation in SQL Server to exploratory analysis and visual communication in Power BI. The original data is obtained from Kaggle.com and it contains 20 columns and 1M rows.
 
 ## 1. Project background
 
@@ -14,7 +14,6 @@ This project explores the available student data to identify patterns and relati
 
 > What patterns and relationships exist between students' academic performance, study habits, mental-health indicators, burnout and dropout risk?
 
-The analysis is exploratory. It identifies patterns in the available data; it does not establish that one factor causes another.
 
 ## 2. Project objectives
 
@@ -30,15 +29,14 @@ The analysis is exploratory. It identifies patterns in the available data; it do
 
 | Tool | Application |
 |---|---|
-| SQL Server / T-SQL | Data inspection, cleaning, transformation and exploratory analysis |
+| SQL Server | Data inspection, cleaning, transformation and exploratory analysis |
 | Power BI | KPI reporting, interactive visualisation and dashboard development |
 | CSV | Dataset storage and data exchange |
 
 ## 4. Data and variables
 
-The original source file supplied for this project was named `student_mental_health_burnout_1M.csv`.
-
-The repository contains a **5,000-row sample** for demonstration and inspection. The original CSV is approximately 198 MB and is not included because it exceeds GitHub's standard 100 MB individual-file limit.
+The original source file for this project was named `student_mental_health_burnout_1M.csv`, and was downloaded from Kaggle.com datasets.
+It has 20 columns and one million rows.
 
 The analysis focuses on the available indicators, including:
 
