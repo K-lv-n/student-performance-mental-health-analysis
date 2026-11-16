@@ -35,17 +35,16 @@ This project explores the available student data to identify patterns and relati
 
 The original source file for this project is named `student_mental_health_burnout_1M.csv`, and was downloaded from Kaggle.com datasets.
 
-Click the link or button below to download the data.
+Click the following link to download the data.
 
-<a
-href="https://drive.google.com/file/d/1ccRxOzLoP_vo2Q9xK7K2-SBKOfkLgvWQ/view?usp=sharing".
+https://drive.google.com/file/d/1ccRxOzLoP_vo2Q9xK7K2-SBKOfkLgvWQ/view?usp=sharing
 
-  <img
-src="https://img.shields.io/badge/Download-Dataset-blue?style=for-the-badge&logo=googledrive"
-alt="Download Dataset">
-</a>
+The data has 20 columns and one million rows as shown below.
 
-The data has 20 columns and one million rows.
+### Dataset Columns
+![Columns](images/20 columns.png).
+### Dataset Rows
+![Rows](images/1 M rows.png). 
 
 The analysis focuses on the available indicators, including:
 
