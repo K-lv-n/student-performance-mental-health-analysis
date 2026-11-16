@@ -1,7 +1,5 @@
 # Student Performance and Mental Health Analysis
 
-**An exploratory data analytics project using SQL Server and Power BI**
-
 This project investigates student academic performance, mental-health indicators, burnout, study habits and dropout risk. It demonstrates an end-to-end analytical workflow, from data inspection and preparation in SQL Server to exploratory analysis and visual communication in Power BI. The original data is obtained from Kaggle.com and it contains 20 columns and 1M rows.
 
 ## 1. Project background
@@ -35,8 +33,19 @@ This project explores the available student data to identify patterns and relati
 
 ## 4. Data and variables
 
-The original source file for this project was named `student_mental_health_burnout_1M.csv`, and was downloaded from Kaggle.com datasets.
-It has 20 columns and one million rows.
+The original source file for this project is named `student_mental_health_burnout_1M.csv`, and was downloaded from Kaggle.com datasets.
+
+Click the link or button below to download the data.
+
+<a
+href="https://drive.google.com/file/d/1ccRxOzLoP_vo2Q9xK7K2-SBKOfkLgvWQ/view?usp=sharing".
+
+  <img
+src="https://img.shields.io/badge/Download-Dataset-blue?style=for-the-badge&logo=googledrive"
+alt="Download Dataset">
+</a>
+
+The data has 20 columns and one million rows.
 
 The analysis focuses on the available indicators, including:
 
