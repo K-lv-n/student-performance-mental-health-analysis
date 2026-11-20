@@ -42,24 +42,22 @@ https://drive.google.com/file/d/1ccRxOzLoP_vo2Q9xK7K2-SBKOfkLgvWQ/view?usp=shari
 
 The data has 20 columns and one million rows as shown below.
 
-### Dataset Columns
+<table>
+  <tr>
+    <th>Dataset Columns from SQL</th>
+    <th>Dataset Rows from SQL</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="images/20%20columns.png" width="100%">
+    </td>
+    <td>
+      <img src="images/1%20M%20rows.png" width="100%">
+    </td>
+  </tr>
+</table>
 
-![Columns](images/20%20columns.png)
-
-### Dataset Rows
-
-![Rows](images/1%20M%20rows.png) 
-
-The analysis focuses on the available indicators, including:
-
-- Academic performance
-- Mental-health scores
-- Study hours
-- Burnout scores
-- Support indicators
-- Age and gender
-- Academic year
-- Dropout-risk categories
+The analysis focuses on the above indicators.
 
 The exact interpretation, measurement scale and valid range of each variable should be confirmed against the original dataset documentation.
 
