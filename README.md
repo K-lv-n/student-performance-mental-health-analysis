@@ -21,6 +21,7 @@ This project explores the available student data to identify patterns and relati
 - Calculate descriptive statistics and examine distributions.
 - Compare student indicators across relevant academic and demographic groups.
 - Build a Power BI dashboard to communicate key indicators and patterns.
+- Investigate relationships exhibited.
 - Identify areas that may deserve further investigation.
 
 ## 3. Tools and technologies
@@ -42,9 +43,12 @@ https://drive.google.com/file/d/1ccRxOzLoP_vo2Q9xK7K2-SBKOfkLgvWQ/view?usp=shari
 The data has 20 columns and one million rows as shown below.
 
 ### Dataset Columns
-![Columns](images/20 columns.png).
+
+![Columns](images/20%20columns.png)
+
 ### Dataset Rows
-![Rows](images/1 M rows.png). 
+
+![Rows](images/1%20M%20rows.png) 
 
 The analysis focuses on the available indicators, including:
 
