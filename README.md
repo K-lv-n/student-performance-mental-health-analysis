@@ -63,7 +63,8 @@ The analysis focuses on the above indicators.
 
 ### 5.1 — Data inspection
 
-The first stage involved examining the source table and its structure.
+The first stage involves examining the source table and its structure. Opening the file in excel takes some time and scrolling down the multi-displayed numbers feels mentally exhausting. This necessitates the importation of the csv file into SQL for easy and efficient data inspection.
+Upon importation process, it displays the columns data types as shown below.
 
 The SQL analysis includes:
 - Checking the number of records (20 Columns and 1 M rows).
