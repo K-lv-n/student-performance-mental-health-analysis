@@ -40,7 +40,7 @@ Click the following link to download the data.
 
 https://drive.google.com/file/d/1ccRxOzLoP_vo2Q9xK7K2-SBKOfkLgvWQ/view?usp=sharing
 
-The data has 20 columns and one million rows as shown below.
+The data has 20 columns and one million rows as shown below from SQL Results/Messages Pane.
 
 <table>
   <tr>
@@ -59,16 +59,14 @@ The data has 20 columns and one million rows as shown below.
 
 The analysis focuses on the above indicators.
 
-The exact interpretation, measurement scale and valid range of each variable should be confirmed against the original dataset documentation.
-
 ## 5. Analytical workflow
 
-### Stage 1 — Data inspection
+### 5.1 — Data inspection
 
 The first stage involved examining the source table and its structure.
 
 The SQL analysis includes:
-- Checking the number of records.
+- Checking the number of records (20 Columns and 1 M rows).
 - Inspecting columns and data types.
 - Identifying missing or blank values.
 - Checking for possible duplicate records.
@@ -76,7 +74,7 @@ The SQL analysis includes:
 
 **Why this matters:** Data quality issues can affect calculations and lead to misleading conclusions if they are not identified before analysis.
 
-### Stage 2 — Data cleaning and preparation
+### 5.2 — Data cleaning and preparation
 
 SQL Server was used to prepare the data for analysis.
 
@@ -90,7 +88,7 @@ The scripts demonstrate:
 
 **Important:** A duplicate check does not automatically remove duplicates, and identifying missing values does not by itself mean those values have been treated. These decisions should be documented separately.
 
-### Stage 3 — Exploratory data analysis (EDA)
+### 5.3 — Exploratory data analysis (EDA)
 
 The next stage uses descriptive statistics and grouped summaries to explore the data.
 
@@ -103,7 +101,7 @@ The SQL scripts demonstrate:
 
 **Why this matters:** EDA helps reveal the distribution of variables, identify unusual values and guide the questions explored in the dashboard.
 
-### Stage 4 — Power BI dashboard
+### 5.4 — Power BI dashboard
 
 Power BI was used to present selected indicators and comparisons in a visual format.
 
