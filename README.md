@@ -69,14 +69,17 @@ Upon importation process, it displays the columns data types as shown below.
 #### CSV Data Types
 <img src="images/Importing%20CSV.png" alt="CSV Data Types" width="500">
 
-After the data has been uploaded the next step is to run querries to check the columns, No of rows, nulls and duplicates. All this can be done with the aid of the `01-initial_exploration_and_cleaning.sql` script.
-20 Columns and 1 M rows).
-- Inspecting columns and data types.
-- Identifying missing or blank values.
-- Checking for possible duplicate records.
-- Reviewing values that may require conversion or validation.
+After the data has been uploaded the next step is to run a query to check the columns, No of rows, nulls, quoted values and duplicates. All this can be done with the aid of the `01-initial_exploration_and_cleaning.sql` script.
 
-**Why this matters:** Data quality issues can affect calculations and lead to misleading conclusions if they are not identified before analysis.
+Copy the SQL Code in the script and run it step by step to acheive the explained analysis processes. 
+
+Alternatively follow the images to see screetshots of the results pane after running the SQL script.
+
+There are no nulls, no quoted values and no duplicates.
+
+However, the numbers stored as nvachar data type like academic_year should be converted to integer or 4 decimals for the variables; study_hours_per_day, stress_level, anxiety_score, depression_score, physical_activity, social_support, screen_time, internet_usage, burnout_score and dropout_risk.
+
+**Why this matters:** Data quality issues can affect calculations or misreferencing and lead to misleading conclusions if they are not identified before analysis.
 
 ### 5.2 — Data cleaning and preparation
 
