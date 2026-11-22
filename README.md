@@ -66,7 +66,7 @@ The analysis focuses on the above indicators.
 The first stage involves examining the source table and its structure. Opening the file in excel takes some time and scrolling down the multi-displayed numbers feels mentally exhausting. This necessitates the importation of the csv file into SQL for easy and efficient data inspection.
 Upon importation process, it displays the columns data types as shown below.
 
-### CSV Data Types
+#### CSV Data Types
 <img src="images/Importing%20CSV.png" alt="CSV Data Types" width="500">
 
 After the data has been uploaded the next step is to run querries to check the columns, No of rows, nulls and duplicates. All this can be done with the aid of the `01-initial_exploration_and_cleaning.sql` script.
