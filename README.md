@@ -69,7 +69,7 @@ Upon importation process, it displays the columns data types as shown below.
 #### CSV Data Types
 <img src="images/Importing%20CSV.png" alt="CSV Data Types" width="500">
 
-After the data has been uploaded the next step is to run a query to check the columns, No of rows, nulls, quoted values and duplicates. All this can be done with the aid of the `01-initial_exploration_and_cleaning.sql` script.
+After the data has been uploaded the next step is to run a query to check the columns, No of rows, nulls, quoted values and duplicates. All this can be done with the aid of the `SQL.Git.Student Mental 1.sql` script.
 
 Copy the SQL Code in the script and run it step by step to acheive the explained analysis processes. 
 
