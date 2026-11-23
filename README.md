@@ -36,7 +36,7 @@ This project explores the available student data to identify patterns and relati
 
 The original source file for this project is named `student_mental_health_burnout_1M.csv`, and was downloaded from Kaggle.com datasets.
 
-Click the following link to download the data.
+The dataset can be obtained via the following link.
 
 https://drive.google.com/file/d/1ccRxOzLoP_vo2Q9xK7K2-SBKOfkLgvWQ/view?usp=sharing
 
@@ -75,25 +75,17 @@ Copy the SQL Code in the script and run it step by step to acheive the explained
 
 Alternatively follow the images to see screetshots of the results pane after running the SQL script.
 
-There are no nulls, no quoted values and no duplicates.
-
-However, the numbers stored as nvachar data type like academic_year should be converted to integer or 4 decimals for the variables; study_hours_per_day, stress_level, anxiety_score, depression_score, physical_activity, social_support, screen_time, internet_usage, burnout_score and dropout_risk.
+The observation is that there are no nulls, no quoted values and no duplicates.
 
 **Why this matters:** Data quality issues can affect calculations or misreferencing and lead to misleading conclusions if they are not identified before analysis.
 
 ### 5.2 — Data cleaning and preparation
 
-SQL Server was used to prepare the data for analysis.
+The values stored as nvachar data type like academic_year should be converted to integer or 4 decimals for the variables; study_hours_per_day, stress_level, anxiety_score, depression_score, physical_activity, social_support, screen_time, internet_usage, burnout_score and dropout_risk.
 
-The scripts demonstrate:
-- Converting fields to appropriate data types.
-- Cleaning text values.
-- Handling numeric conversion checks.
-- Examining missing values.
-- Checking for duplicate records.
-- Preparing cleaned and aggregated tables.
+This ensures no errors will be displayed in all calculations involving the values.
 
-**Important:** A duplicate check does not automatically remove duplicates, and identifying missing values does not by itself mean those values have been treated. These decisions should be documented separately.
+Since there are no duplicates or nulls no further cleaning or preparation will be made other than the conversion and creating new table containing the cleaned data. 
 
 ### 5.3 — Exploratory data analysis (EDA)
 
